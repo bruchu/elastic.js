@@ -28,7 +28,7 @@
              @param {Object} oQuery A valid query object
              @returns {Object} returns <code>this</code> so that calls can be chained.
              */
-    function shouldFunction(oQuery) {
+    var shouldFunction = function(oQuery) {
       var i, len;
 
       if (query.bool.should == null) {
@@ -55,7 +55,7 @@
       }
 
       return this;
-    }
+    };
 
     return extend(_common, {
 

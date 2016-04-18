@@ -5963,7 +5963,7 @@
                 Filter objects.
              @returns {Object} returns <code>this</code> so that calls can be chained.
              */
-    function shouldFunction(oFilter) {
+    var shouldFunction = function(oFilter) {
       var i, len;
 
       if (filter.bool.should == null) {
@@ -5990,7 +5990,7 @@
       }
 
       return this;
-    }
+    };
 
     return extend(_common, {
 
@@ -9031,7 +9031,7 @@
              @param {Object} oQuery A valid query object
              @returns {Object} returns <code>this</code> so that calls can be chained.
              */
-    function shouldFunction(oQuery) {
+    var shouldFunction = function(oQuery) {
       var i, len;
 
       if (query.bool.should == null) {
@@ -9058,7 +9058,7 @@
       }
 
       return this;
-    }
+    };
 
     return extend(_common, {
 

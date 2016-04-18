@@ -36,7 +36,7 @@
                 Filter objects.
              @returns {Object} returns <code>this</code> so that calls can be chained.
              */
-    function shouldFunction(oFilter) {
+    var shouldFunction = function(oFilter) {
       var i, len;
 
       if (filter.bool.should == null) {
@@ -63,7 +63,7 @@
       }
 
       return this;
-    }
+    };
 
     return extend(_common, {
 
